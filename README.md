@@ -1,6 +1,6 @@
-# D3IL × Energy Matching — Flow 学習の結果まとめ
+# D3IL × Flow Matching — Flow 学習の結果まとめ
 
-`experiments/d3il` で学習した Energy Matching (EM) 方策のうち、**Flow 学習 (flow matching で v = -∇V を回帰) の重み**について、
+`experiments/d3il` で学習した方策のうち、**Flow 学習 (flow matching で v = -∇V を回帰) の重み**について、
 推論動画と、学習・推論に使ったファイルをまとめたもの。d3il 側のファイルは変更していない (すべてコピー)。
 
 - 学習: 2026-10-01 〜 10-04、`d3il/logs/em_all/` (状態入力 100k step、画像入力 60k step)
