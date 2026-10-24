@@ -1,0 +1,81 @@
+defaults:
+  - agents: em_agent
+
+agent_name: em
+log_dir: logs/inserting/
+
+train_data_path: environments/dataset/data/inserting/train_files.pkl
+eval_data_path: environments/dataset/data/inserting/eval_files.pkl
+
+# insert wandb here
+wandb:
+  entity: none
+  project: d3il
+
+group: inserting_${agent_name}
+
+hydra:
+  run:
+    dir: ${log_dir}/runs/${agent_name}/${now:%Y-%m-%d}/${now:%H-%M-%S}
+  sweep:
+    dir: ${log_dir}/sweeps/${agent_name}/${now:%Y-%m-%d}/${now:%H-%M-%S}
+    subdir: ${hydra.job.override_dirname}
+
+seed: 42
+
+# Network
+hidden_dim: 256
+num_hidden_layers: 6
+
+# transformer
+n_layer: 4
+n_head: 4
+n_embd: 72
+
+# Training
+# 700 demos of ~1000 steps give ~700k slices, so one epoch is already ~2700
+# optimiser steps at batch 256 -- two orders of magnitude more than avoiding.
+train_batch_size: 256
+val_batch_size: 256
+num_workers: 4
+device: 'cuda'
+epoch: 50
+eval_every_n_epochs: 5
+scale_data: True
+
+# Environment
+# 2 desired robot xy + 2 measured robot xy + 3 blocks x (xy, tan yaw)
+obs_dim: 13
+action_dim: 2
+max_len_data: 2400
+window_size: 1
+
+# Dataset
+trainset:
+  _target_: environments.dataset.inserting_dataset.Inserting_Dataset
+  data_directory: ${train_data_path}
+  obs_dim: ${obs_dim}
+  action_dim: ${action_dim}
+  max_len_data: ${max_len_data}
+  window_size: ${window_size}
+
+valset:
+  _target_: environments.dataset.inserting_dataset.Inserting_Dataset
+  data_directory: ${eval_data_path}
+  obs_dim: ${obs_dim}
+  action_dim: ${action_dim}
+  max_len_data: ${max_len_data}
+  window_size: ${window_size}
+
+# Simulation
+# 失敗 ep は max_steps_per_episode=2000 まで走る (1 コアで約 5 分)。
+# 60 test context x 6 = 360 ep を 30 プロセスで回す。
+simulation:
+  _target_: simulation.inserting_sim.Inserting_Sim
+  seed: ${seed}
+  device: ${device}
+  render: False
+  n_cores: 30
+  n_contexts: 60
+  n_trajectories_per_context: 6
+  max_steps_per_episode: 2000

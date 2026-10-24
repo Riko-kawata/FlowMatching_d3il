@@ -1,0 +1,58 @@
+/mnt/data1/home/rkawata/miniconda3/envs/d3il_env/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/mnt/data1/home/rkawata/miniconda3/envs/d3il_env/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+ROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /mnt/data1/home/rkawata/work/EnergyMatching/experiments/d3il/agents/models/robomimic/scripts/setup_macros.py
+)
+  0%|          | 0/1495 [00:00<?, ?it/s]  3%|▎         | 47/1495 [00:00<00:03, 468.52it/s]  6%|▋         | 94/1495 [00:00<00:03, 392.66it/s]  9%|▉         | 135/1495 [00:00<00:03, 377.21it/s] 12%|█▏        | 179/1495 [00:00<00:03, 398.41it/s] 15%|█▌        | 226/1495 [00:00<00:03, 420.38it/s] 18%|█▊        | 271/1495 [00:00<00:02, 426.73it/s] 21%|██        | 316/1495 [00:00<00:02, 431.80it/s] 24%|██▍       | 363/1495 [00:00<00:02, 441.69it/s] 27%|██▋       | 410/1495 [00:00<00:02, 448.11it/s] 31%|███       | 457/1495 [00:01<00:02, 452.57it/s] 34%|███▍      | 505/1495 [00:01<00:02, 459.69it/s] 37%|███▋      | 552/1495 [00:01<00:02, 459.19it/s] 40%|████      | 598/1495 [00:01<00:01, 455.65it/s] 43%|████▎     | 644/1495 [00:01<00:01, 442.51it/s] 46%|████▌     | 689/1495 [00:01<00:01, 444.05it/s] 49%|████▉     | 734/1495 [00:01<00:01, 441.08it/s] 52%|█████▏    | 784/1495 [00:01<00:01, 457.72it/s] 56%|█████▌    | 832/1495 [00:01<00:01, 463.93it/s] 59%|█████▉    | 879/1495 [00:01<00:01, 464.18it/s] 62%|██████▏   | 926/1495 [00:02<00:01, 465.27it/s] 65%|██████▌   | 973/1495 [00:02<00:01, 451.66it/s] 68%|██████▊   | 1019/1495 [00:02<00:01, 440.94it/s] 71%|███████   | 1064/1495 [00:02<00:00, 441.47it/s] 74%|███████▍  | 1112/1495 [00:02<00:00, 452.41it/s] 78%|███████▊  | 1159/1495 [00:02<00:00, 456.58it/s] 81%|████████  | 1207/1495 [00:02<00:00, 462.23it/s] 84%|████████▍ | 1254/1495 [00:02<00:00, 462.27it/s] 87%|████████▋ | 1302/1495 [00:02<00:00, 466.89it/s] 90%|█████████ | 1349/1495 [00:03<00:00, 456.65it/s] 93%|█████████▎| 1397/1495 [00:03<00:00, 462.30it/s] 97%|█████████▋| 1444/1495 [00:03<00:00, 458.37it/s]100%|█████████▉| 1493/1495 [00:03<00:00, 466.01it/s]100%|██████████| 1495/1495 [00:03<00:00, 449.04it/s]
+  0%|          | 0/166 [00:00<?, ?it/s] 27%|██▋       | 44/166 [00:00<00:00, 430.98it/s] 53%|█████▎    | 88/166 [00:00<00:00, 372.82it/s] 81%|████████▏ | 135/166 [00:00<00:00, 409.29it/s]100%|██████████| 166/166 [00:00<00:00, 411.68it/s]
+/mnt/data1/home/rkawata/work/EnergyMatching/experiments/d3il/agents/base_agent.py:135: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.model.load_state_dict(torch.load(os.path.join(weights_path, sv_name)))
+pybullet build time: Jan 29 2025 23:16:28
+/mnt/data1/home/rkawata/miniconda3/envs/d3il_env/lib/python3.10/site-packages/gym/spaces/box.py:73: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+  logger.warn(
+/mnt/data1/home/rkawata/miniconda3/envs/d3il_env/lib/python3.10/site-packages/torch/autograd/graph.py:825: UserWarning: Attempting to run cuBLAS, but there was no current CUDA context! Attempting to set the primary context... (Triggered internally at ../aten/src/ATen/cuda/CublasHandlePool.cpp:135.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+there are cpus:  128
+1436386 {0}
+Final IK error (74 iterations):  7.243842674661465e-06
+Final IK error (0 iterations):  7.243842674661465e-06
+Context 0 Rollout 0
+Context 1 Rollout 0
+wrote /mnt/data1/home/rkawata/work/EnergyMatching/experiments/dl_kouza/videos/sorting_6_vision_s0/ctx00_k0_success.mp4 steps=440
+Context 2 Rollout 0
+wrote /mnt/data1/home/rkawata/work/EnergyMatching/experiments/dl_kouza/videos/sorting_6_vision_s0/ctx01_k0_fail.mp4 steps=1200
+Context 3 Rollout 0
+wrote /mnt/data1/home/rkawata/work/EnergyMatching/experiments/dl_kouza/videos/sorting_6_vision_s0/ctx02_k0_success.mp4 steps=486
+Context 4 Rollout 0
+wrote /mnt/data1/home/rkawata/work/EnergyMatching/experiments/dl_kouza/videos/sorting_6_vision_s0/ctx03_k0_fail.mp4 steps=1200
+p(m|c) tensor([[0., 0., 1., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+         0., 0.],
+        [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+         0., 0.],
+        [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 1., 0.,
+         0., 0.],
+        [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+         0., 0.],
+        [0., 0., 0., 0., 1., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+         0., 0.]])
+Successrate 0.6000000238418579
+entropy -0.0
+KL 0.9438629150390625
+wrote /mnt/data1/home/rkawata/work/EnergyMatching/experiments/dl_kouza/videos/sorting_6_vision_s0/ctx04_k0_success.mp4 steps=403
+{"task": "sorting_6", "mod": "vision", "seed": 0, "run_dir": "/mnt/data1/home/rkawata/work/EnergyMatching/experiments/d3il/logs/em_all/sorting_6/vision_s0", "ckpt": "em_p1_step60000.pth", "exec_horizon": 2, "fps": 30.0, "overrides": ["agents.exec_horizon=2", "simulation.render=False", "simulation.n_cores=1", "simulation.n_contexts=5", "simulation.n_trajectories_per_context=1", "simulation.max_steps_per_episode=1200", "simulation.if_vision=True"], "episodes": [{"ctx": 0, "k": 0, "steps": 440, "success": true, "video": "ctx00_k0_success.mp4"}, {"ctx": 1, "k": 0, "steps": 1200, "success": false, "video": "ctx01_k0_fail.mp4"}, {"ctx": 2, "k": 0, "steps": 486, "success": true, "video": "ctx02_k0_success.mp4"}, {"ctx": 3, "k": 0, "steps": 1200, "success": false, "video": "ctx03_k0_fail.mp4"}, {"ctx": 4, "k": 0, "steps": 403, "success": true, "video": "ctx04_k0_success.mp4"}], "success_rate": 0.6}
+Exception ignored in: <function GLContext.__del__ at 0x725cb054fd90>
+Traceback (most recent call last):
+  File "/mnt/data1/home/rkawata/miniconda3/envs/d3il_env/lib/python3.10/site-packages/mujoco/egl/__init__.py", line 130, in __del__
+  File "/mnt/data1/home/rkawata/miniconda3/envs/d3il_env/lib/python3.10/site-packages/mujoco/egl/__init__.py", line 125, in free
+  File "/mnt/data1/home/rkawata/miniconda3/envs/d3il_env/lib/python3.10/site-packages/OpenGL/error.py", line 230, in glCheckError
+OpenGL.raw.EGL._errors.EGLError: <exception str() failed>
+Exception ignored in: <function GLContext.__del__ at 0x725cb054fd90>
+Traceback (most recent call last):
+  File "/mnt/data1/home/rkawata/miniconda3/envs/d3il_env/lib/python3.10/site-packages/mujoco/egl/__init__.py", line 130, in __del__
+  File "/mnt/data1/home/rkawata/miniconda3/envs/d3il_env/lib/python3.10/site-packages/mujoco/egl/__init__.py", line 125, in free
+  File "/mnt/data1/home/rkawata/miniconda3/envs/d3il_env/lib/python3.10/site-packages/OpenGL/error.py", line 230, in glCheckError
+OpenGL.raw.EGL._errors.EGLError: <exception str() failed>

@@ -1,0 +1,54 @@
+{
+  "task": "sorting_4",
+  "mod": "state",
+  "seed": 0,
+  "run_dir": "/mnt/data1/home/rkawata/work/EnergyMatching/experiments/d3il/logs/em_all/sorting_4/state_s0",
+  "ckpt": "em_p1_step100000.pth",
+  "exec_horizon": 2,
+  "fps": 30.0,
+  "overrides": [
+    "agents.exec_horizon=2",
+    "simulation.render=False",
+    "simulation.n_cores=1",
+    "simulation.n_contexts=5",
+    "simulation.n_trajectories_per_context=1"
+  ],
+  "episodes": [
+    {
+      "ctx": 0,
+      "k": 0,
+      "steps": 700,
+      "success": false,
+      "video": "ctx00_k0_fail.mp4"
+    },
+    {
+      "ctx": 1,
+      "k": 0,
+      "steps": 700,
+      "success": false,
+      "video": "ctx01_k0_fail.mp4"
+    },
+    {
+      "ctx": 2,
+      "k": 0,
+      "steps": 700,
+      "success": false,
+      "video": "ctx02_k0_fail.mp4"
+    },
+    {
+      "ctx": 3,
+      "k": 0,
+      "steps": 700,
+      "success": false,
+      "video": "ctx03_k0_fail.mp4"
+    },
+    {
+      "ctx": 4,
+      "k": 0,
+      "steps": 521,
+      "success": true,
+      "video": "ctx04_k0_success.mp4"
+    }
+  ],
+  "success_rate": 0.2
+}

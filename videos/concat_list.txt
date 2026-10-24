@@ -1,0 +1,7 @@
+file 'inserting_state_s0/ctx00_k0_success.mp4'
+file 'sorting_4_state_s0/ctx04_k0_success.mp4'
+file 'sorting_4_vision_s0/ctx00_k0_success.mp4'
+file 'sorting_6_state_s0/ctx00_k0_fail.mp4'
+file 'sorting_6_vision_s0/ctx00_k0_success.mp4'
+file 'stacking_state_s0/ctx00_k0_fail.mp4'
+file 'stacking_vision_s0/ctx02_k0_success.mp4'

@@ -1,0 +1,6 @@
+- agents=em_vision_agent
+- agent_name=em_vision
+- seed=0
+- wandb.entity=none
+- wandb.project=d3il
+- +skip_sim=true

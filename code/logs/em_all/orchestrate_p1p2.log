@@ -1,0 +1,182 @@
+10-03 21:54:20 start: 6 trainings, 60 evals
+10-03 21:54:20 train start logs/em_all/sorting_4/vision_s1 gpu 0
+10-03 21:54:20 train start logs/em_all/sorting_6/vision_s1 gpu 1
+10-03 21:54:20 train start logs/em_all/stacking/vision_s1 gpu 2
+10-03 21:54:20 eval start logs/em_all/sorting_4/state_s0 p1 ta8 gpu 1 cores 0-29
+10-03 21:55:50 eval start logs/em_all/sorting_4/state_s0 p2 ta8 gpu 3 cores 30-59
+10-03 21:57:20 eval start logs/em_all/sorting_4/state_s0 p1 ta2 gpu 4 cores 60-89
+10-03 22:26:22 eval done logs/em_all/sorting_4/state_s0 p2 ta8 rc=0 ok=True
+10-03 22:26:22 eval start logs/em_all/sorting_4/state_s0 p2 ta2 gpu 3 cores 30-59
+10-03 22:28:22 eval done logs/em_all/sorting_4/state_s0 p1 ta8 rc=0 ok=True
+10-03 22:28:22 eval start logs/em_all/sorting_4/state_s1 p1 ta8 gpu 5 cores 0-29
+10-03 22:47:23 eval done logs/em_all/sorting_4/state_s0 p1 ta2 rc=0 ok=True
+10-03 22:47:23 eval start logs/em_all/sorting_4/state_s1 p2 ta8 gpu 4 cores 60-89
+10-03 23:03:24 eval done logs/em_all/sorting_4/state_s1 p1 ta8 rc=0 ok=True
+10-03 23:03:24 eval start logs/em_all/sorting_4/state_s1 p1 ta2 gpu 5 cores 0-29
+10-03 23:14:55 eval done logs/em_all/sorting_4/state_s0 p2 ta2 rc=0 ok=True
+10-03 23:14:55 eval start logs/em_all/sorting_4/state_s1 p2 ta2 gpu 3 cores 30-59
+10-03 23:22:26 eval done logs/em_all/sorting_4/state_s1 p2 ta8 rc=0 ok=True
+10-03 23:22:26 eval start logs/em_all/sorting_4/state_s2 p1 ta8 gpu 4 cores 60-89
+10-03 23:54:58 eval done logs/em_all/sorting_4/state_s1 p1 ta2 rc=0 ok=True
+10-03 23:54:58 eval start logs/em_all/sorting_4/state_s2 p2 ta8 gpu 5 cores 0-29
+10-03 23:56:58 eval done logs/em_all/sorting_4/state_s2 p1 ta8 rc=0 ok=True
+10-03 23:56:58 eval start logs/em_all/sorting_4/state_s2 p1 ta2 gpu 4 cores 60-89
+10-04 00:04:28 eval done logs/em_all/sorting_4/state_s1 p2 ta2 rc=0 ok=True
+10-04 00:04:28 eval start logs/em_all/sorting_4/state_s2 p2 ta2 gpu 3 cores 30-59
+10-04 00:28:00 eval done logs/em_all/sorting_4/state_s2 p2 ta8 rc=0 ok=True
+10-04 00:28:00 eval start logs/em_all/sorting_6/state_s0 p1 ta8 gpu 5 cores 0-29
+10-04 00:48:31 eval done logs/em_all/sorting_4/state_s2 p1 ta2 rc=0 ok=True
+10-04 00:48:31 eval start logs/em_all/sorting_6/state_s0 p2 ta8 gpu 4 cores 60-89
+10-04 00:55:02 eval done logs/em_all/sorting_4/state_s2 p2 ta2 rc=0 ok=True
+10-04 00:55:02 eval start logs/em_all/sorting_6/state_s0 p1 ta2 gpu 3 cores 30-59
+10-04 01:37:34 eval done logs/em_all/sorting_6/state_s0 p1 ta8 rc=0 ok=True
+10-04 01:37:34 eval start logs/em_all/sorting_6/state_s0 p2 ta2 gpu 5 cores 0-29
+10-04 01:58:05 eval done logs/em_all/sorting_6/state_s0 p2 ta8 rc=0 ok=True
+10-04 01:58:05 eval start logs/em_all/sorting_6/state_s1 p1 ta8 gpu 4 cores 60-89
+10-04 02:22:07 train done logs/em_all/stacking/vision_s1 rc=0 ok=True
+10-04 02:22:07 train start logs/em_all/sorting_4/vision_s2 gpu 2
+10-04 02:23:37 train done logs/em_all/sorting_4/vision_s1 rc=0 ok=True
+10-04 02:23:37 train start logs/em_all/sorting_6/vision_s2 gpu 0
+10-04 02:31:37 train done logs/em_all/sorting_6/vision_s1 rc=0 ok=True
+10-04 02:31:37 train start logs/em_all/stacking/vision_s2 gpu 1
+10-04 02:45:08 eval done logs/em_all/sorting_6/state_s0 p1 ta2 rc=0 ok=True
+10-04 02:45:08 eval start logs/em_all/sorting_6/state_s1 p2 ta8 gpu 3 cores 30-59
+10-04 03:07:39 eval done logs/em_all/sorting_6/state_s1 p1 ta8 rc=0 ok=True
+10-04 03:07:39 eval start logs/em_all/sorting_6/state_s1 p1 ta2 gpu 4 cores 60-89
+10-04 03:24:40 eval done logs/em_all/sorting_6/state_s0 p2 ta2 rc=0 ok=True
+10-04 03:24:41 eval start logs/em_all/sorting_6/state_s1 p2 ta2 gpu 5 cores 0-29
+10-04 03:54:12 eval done logs/em_all/sorting_6/state_s1 p2 ta8 rc=0 ok=True
+10-04 03:54:12 eval start logs/em_all/sorting_6/state_s2 p1 ta8 gpu 3 cores 30-59
+10-04 04:53:16 eval done logs/em_all/sorting_6/state_s1 p1 ta2 rc=0 ok=True
+10-04 04:53:16 eval start logs/em_all/sorting_6/state_s2 p2 ta8 gpu 4 cores 60-89
+10-04 05:03:16 eval done logs/em_all/sorting_6/state_s2 p1 ta8 rc=0 ok=True
+10-04 05:03:17 eval start logs/em_all/sorting_6/state_s2 p1 ta2 gpu 3 cores 30-59
+10-04 05:11:17 eval done logs/em_all/sorting_6/state_s1 p2 ta2 rc=0 ok=True
+10-04 05:11:17 eval start logs/em_all/sorting_6/state_s2 p2 ta2 gpu 5 cores 0-29
+10-04 06:01:50 eval done logs/em_all/sorting_6/state_s2 p2 ta8 rc=0 ok=True
+10-04 06:01:50 eval start logs/em_all/stacking/state_s0 p1 ta8 gpu 4 cores 60-89
+10-04 06:27:52 eval done logs/em_all/stacking/state_s0 p1 ta8 rc=0 ok=True
+10-04 06:27:52 eval start logs/em_all/stacking/state_s0 p2 ta8 gpu 4 cores 60-89
+10-04 06:52:23 eval done logs/em_all/sorting_6/state_s2 p1 ta2 rc=0 ok=True
+10-04 06:52:23 eval start logs/em_all/stacking/state_s0 p1 ta2 gpu 3 cores 30-59
+10-04 06:54:23 eval done logs/em_all/stacking/state_s0 p2 ta8 rc=0 ok=True
+10-04 06:54:23 eval start logs/em_all/stacking/state_s0 p2 ta2 gpu 4 cores 60-89
+10-04 06:56:54 eval done logs/em_all/sorting_6/state_s2 p2 ta2 rc=0 ok=True
+10-04 06:56:54 eval start logs/em_all/stacking/state_s1 p1 ta8 gpu 5 cores 0-29
+10-04 06:59:24 train done logs/em_all/sorting_4/vision_s2 rc=0 ok=True
+10-04 07:16:55 train done logs/em_all/sorting_6/vision_s2 rc=0 ok=True
+10-04 07:20:55 eval done logs/em_all/stacking/state_s1 p1 ta8 rc=0 ok=True
+10-04 07:20:55 eval start logs/em_all/stacking/state_s1 p2 ta8 gpu 2 cores 0-29
+10-04 07:24:25 train done logs/em_all/stacking/vision_s2 rc=0 ok=True
+10-04 07:44:56 eval done logs/em_all/stacking/state_s1 p2 ta8 rc=0 ok=True
+10-04 07:44:57 eval start logs/em_all/stacking/state_s1 p1 ta2 gpu 1 cores 0-29
+10-04 08:09:28 eval done logs/em_all/stacking/state_s0 p1 ta2 rc=0 ok=True
+10-04 08:09:28 eval start logs/em_all/stacking/state_s1 p2 ta2 gpu 5 cores 30-59
+10-04 08:11:58 eval done logs/em_all/stacking/state_s0 p2 ta2 rc=0 ok=True
+10-04 08:11:58 eval start logs/em_all/stacking/state_s2 p1 ta8 gpu 2 cores 60-89
+10-04 08:36:00 eval done logs/em_all/stacking/state_s2 p1 ta8 rc=0 ok=True
+10-04 08:36:00 eval start logs/em_all/stacking/state_s2 p2 ta8 gpu 2 cores 60-89
+10-04 09:00:01 eval done logs/em_all/stacking/state_s2 p2 ta8 rc=0 ok=True
+10-04 09:00:01 eval start logs/em_all/stacking/state_s2 p1 ta2 gpu 2 cores 60-89
+10-04 09:02:01 eval done logs/em_all/stacking/state_s1 p1 ta2 rc=0 ok=True
+10-04 09:02:01 eval start logs/em_all/stacking/state_s2 p2 ta2 gpu 1 cores 0-29
+10-04 09:25:03 eval done logs/em_all/stacking/state_s1 p2 ta2 rc=0 ok=True
+10-04 09:25:03 eval start logs/em_all/inserting/state_s0 p1 ta8 gpu 3 cores 30-59
+10-04 09:47:34 eval done logs/em_all/inserting/state_s0 p1 ta8 rc=0 ok=True
+10-04 09:47:34 eval start logs/em_all/inserting/state_s0 p2 ta8 gpu 3 cores 30-59
+10-04 10:09:35 eval done logs/em_all/inserting/state_s0 p2 ta8 rc=0 ok=True
+10-04 10:09:35 eval start logs/em_all/inserting/state_s0 p1 ta2 gpu 3 cores 30-59
+10-04 10:17:05 eval done logs/em_all/stacking/state_s2 p1 ta2 rc=0 ok=True
+10-04 10:17:05 eval start logs/em_all/inserting/state_s0 p2 ta2 gpu 2 cores 60-89
+10-04 10:19:05 eval done logs/em_all/stacking/state_s2 p2 ta2 rc=0 ok=True
+10-04 10:19:05 eval start logs/em_all/inserting/state_s1 p1 ta8 gpu 1 cores 0-29
+10-04 10:51:07 eval done logs/em_all/inserting/state_s1 p1 ta8 rc=0 ok=True
+10-04 10:51:07 eval start logs/em_all/inserting/state_s1 p2 ta8 gpu 1 cores 0-29
+10-04 10:55:37 eval done logs/em_all/inserting/state_s0 p1 ta2 rc=0 ok=True
+10-04 10:55:37 eval start logs/em_all/inserting/state_s1 p1 ta2 gpu 4 cores 30-59
+10-04 11:05:38 eval done logs/em_all/inserting/state_s0 p2 ta2 rc=0 ok=True
+10-04 11:05:38 eval start logs/em_all/inserting/state_s1 p2 ta2 gpu 5 cores 60-89
+10-04 11:20:39 eval done logs/em_all/inserting/state_s1 p2 ta8 rc=0 ok=True
+10-04 11:20:39 eval start logs/em_all/inserting/state_s2 p1 ta8 gpu 1 cores 0-29
+10-04 11:40:40 eval done logs/em_all/inserting/state_s1 p1 ta2 rc=0 ok=True
+10-04 11:40:40 eval start logs/em_all/inserting/state_s2 p2 ta8 gpu 2 cores 30-59
+10-04 11:51:40 eval done logs/em_all/inserting/state_s2 p1 ta8 rc=0 ok=True
+10-04 11:51:40 eval start logs/em_all/inserting/state_s2 p1 ta2 gpu 1 cores 0-29
+10-04 11:53:40 eval done logs/em_all/inserting/state_s1 p2 ta2 rc=0 ok=True
+10-04 11:53:40 eval start logs/em_all/inserting/state_s2 p2 ta2 gpu 5 cores 60-89
+10-04 12:02:11 eval done logs/em_all/inserting/state_s2 p2 ta8 rc=0 ok=True
+10-04 12:02:11 eval start logs/em_all/sorting_4/vision_s0 p1 ta8 gpu 2 cores 30-59
+10-04 12:20:12 eval done logs/em_all/sorting_4/vision_s0 p1 ta8 rc=0 ok=True
+10-04 12:20:12 eval start logs/em_all/sorting_4/vision_s0 p2 ta8 gpu 2 cores 30-59
+10-04 12:38:43 eval done logs/em_all/inserting/state_s2 p1 ta2 rc=0 ok=True
+10-04 12:38:43 eval done logs/em_all/sorting_4/vision_s0 p2 ta8 rc=0 ok=True
+10-04 12:38:43 eval start logs/em_all/sorting_4/vision_s0 p1 ta2 gpu 1 cores 0-29
+10-04 12:40:13 eval start logs/em_all/sorting_4/vision_s0 p2 ta2 gpu 2 cores 30-59
+10-04 12:42:13 eval done logs/em_all/inserting/state_s2 p2 ta2 rc=0 ok=True
+10-04 12:42:13 eval start logs/em_all/sorting_6/vision_s0 p1 ta8 gpu 3 cores 60-89
+10-04 13:03:14 eval done logs/em_all/sorting_4/vision_s0 p2 ta2 rc=0 ok=True
+10-04 13:03:14 eval start logs/em_all/sorting_6/vision_s0 p2 ta8 gpu 2 cores 30-59
+10-04 13:05:14 eval done logs/em_all/sorting_4/vision_s0 p1 ta2 rc=0 ok=True
+10-04 13:05:15 eval start logs/em_all/sorting_6/vision_s0 p1 ta2 gpu 1 cores 0-29
+10-04 13:18:45 eval done logs/em_all/sorting_6/vision_s0 p1 ta8 rc=0 ok=True
+10-04 13:18:45 eval start logs/em_all/sorting_6/vision_s0 p2 ta2 gpu 3 cores 60-89
+10-04 13:33:46 eval done logs/em_all/sorting_6/vision_s0 p2 ta8 rc=0 ok=True
+10-04 13:33:46 eval start logs/em_all/stacking/vision_s0 p1 ta8 gpu 2 cores 30-59
+10-04 13:46:17 eval done logs/em_all/sorting_6/vision_s0 p1 ta2 rc=0 ok=True
+10-04 13:46:17 eval start logs/em_all/stacking/vision_s0 p2 ta8 gpu 1 cores 0-29
+10-04 13:51:17 eval done logs/em_all/stacking/vision_s0 p1 ta8 rc=0 ok=True
+10-04 13:51:17 eval start logs/em_all/stacking/vision_s0 p1 ta2 gpu 0 cores 30-59
+10-04 13:59:48 eval done logs/em_all/sorting_6/vision_s0 p2 ta2 rc=0 ok=True
+10-04 13:59:48 eval start logs/em_all/stacking/vision_s0 p2 ta2 gpu 2 cores 60-89
+10-04 14:15:19 eval done logs/em_all/stacking/vision_s0 p2 ta8 rc=0 ok=True
+10-04 14:15:19 eval start logs/em_all/stacking/vision_s1 p1 ta8 gpu 1 cores 0-29
+10-04 14:38:50 eval done logs/em_all/stacking/vision_s0 p1 ta2 rc=0 ok=True
+10-04 14:38:50 eval start logs/em_all/stacking/vision_s1 p2 ta8 gpu 3 cores 30-59
+10-04 14:44:20 eval done logs/em_all/stacking/vision_s1 p1 ta8 rc=0 ok=True
+10-04 14:44:20 eval start logs/em_all/stacking/vision_s1 p1 ta2 gpu 0 cores 0-29
+10-04 14:46:50 eval done logs/em_all/stacking/vision_s0 p2 ta2 rc=0 ok=True
+10-04 14:46:50 eval start logs/em_all/stacking/vision_s1 p2 ta2 gpu 1 cores 60-89
+10-04 15:03:51 eval done logs/em_all/stacking/vision_s1 p2 ta8 rc=0 ok=True
+10-04 15:03:51 eval start logs/em_all/sorting_4/vision_s1 p1 ta8 gpu 2 cores 30-59
+10-04 15:26:23 eval done logs/em_all/sorting_4/vision_s1 p1 ta8 rc=0 ok=True
+10-04 15:26:23 eval start logs/em_all/sorting_4/vision_s1 p2 ta8 gpu 2 cores 30-59
+10-04 15:32:53 eval done logs/em_all/stacking/vision_s1 p1 ta2 rc=0 ok=True
+10-04 15:32:53 eval start logs/em_all/sorting_4/vision_s1 p1 ta2 gpu 0 cores 0-29
+10-04 15:34:53 eval done logs/em_all/stacking/vision_s1 p2 ta2 rc=0 ok=True
+10-04 15:34:54 eval start logs/em_all/sorting_4/vision_s1 p2 ta2 gpu 1 cores 60-89
+10-04 15:42:24 eval done logs/em_all/sorting_4/vision_s1 p2 ta8 rc=0 ok=True
+10-04 15:42:24 eval start logs/em_all/sorting_6/vision_s1 p1 ta8 gpu 2 cores 30-59
+10-04 15:57:55 eval done logs/em_all/sorting_4/vision_s1 p1 ta2 rc=0 ok=True
+10-04 15:57:55 eval start logs/em_all/sorting_6/vision_s1 p2 ta8 gpu 0 cores 0-29
+10-04 16:00:25 eval done logs/em_all/sorting_4/vision_s1 p2 ta2 rc=0 ok=True
+10-04 16:00:25 eval start logs/em_all/sorting_6/vision_s1 p1 ta2 gpu 1 cores 60-89
+10-04 16:10:26 eval done logs/em_all/sorting_6/vision_s1 p1 ta8 rc=0 ok=True
+10-04 16:10:26 eval start logs/em_all/sorting_6/vision_s1 p2 ta2 gpu 2 cores 30-59
+10-04 16:33:57 eval done logs/em_all/sorting_6/vision_s1 p2 ta8 rc=0 ok=True
+10-04 16:33:57 eval start logs/em_all/sorting_4/vision_s2 p1 ta8 gpu 0 cores 0-29
+10-04 16:42:28 eval done logs/em_all/sorting_6/vision_s1 p1 ta2 rc=0 ok=True
+10-04 16:42:28 eval start logs/em_all/sorting_4/vision_s2 p2 ta8 gpu 1 cores 60-89
+10-04 16:44:28 eval done logs/em_all/sorting_6/vision_s1 p2 ta2 rc=0 ok=True
+10-04 16:44:28 eval start logs/em_all/sorting_4/vision_s2 p1 ta2 gpu 2 cores 30-59
+10-04 16:51:28 eval done logs/em_all/sorting_4/vision_s2 p1 ta8 rc=0 ok=True
+10-04 16:51:28 eval start logs/em_all/sorting_4/vision_s2 p2 ta2 gpu 3 cores 0-29
+10-04 17:00:59 eval done logs/em_all/sorting_4/vision_s2 p2 ta8 rc=0 ok=True
+10-04 17:00:59 eval start logs/em_all/sorting_6/vision_s2 p1 ta8 gpu 1 cores 60-89
+10-04 17:04:59 eval done logs/em_all/sorting_4/vision_s2 p1 ta2 rc=0 ok=True
+10-04 17:04:59 eval start logs/em_all/sorting_6/vision_s2 p2 ta8 gpu 0 cores 30-59
+10-04 17:13:00 eval done logs/em_all/sorting_4/vision_s2 p2 ta2 rc=0 ok=True
+10-04 17:13:00 eval start logs/em_all/sorting_6/vision_s2 p1 ta2 gpu 2 cores 0-29
+10-04 17:32:31 eval done logs/em_all/sorting_6/vision_s2 p2 ta8 rc=0 ok=True
+10-04 17:32:31 eval start logs/em_all/sorting_6/vision_s2 p2 ta2 gpu 0 cores 30-59
+10-04 17:37:01 eval done logs/em_all/sorting_6/vision_s2 p1 ta8 rc=0 ok=True
+10-04 17:37:01 eval start logs/em_all/stacking/vision_s2 p1 ta8 gpu 1 cores 60-89
+10-04 17:54:32 eval done logs/em_all/sorting_6/vision_s2 p1 ta2 rc=0 ok=True
+10-04 17:54:32 eval start logs/em_all/stacking/vision_s2 p2 ta8 gpu 2 cores 0-29
+10-04 18:08:33 eval done logs/em_all/stacking/vision_s2 p1 ta8 rc=0 ok=True
+10-04 18:08:33 eval start logs/em_all/stacking/vision_s2 p1 ta2 gpu 1 cores 60-89
+10-04 18:10:33 eval done logs/em_all/sorting_6/vision_s2 p2 ta2 rc=0 ok=True
+10-04 18:10:33 eval start logs/em_all/stacking/vision_s2 p2 ta2 gpu 0 cores 30-59
+10-04 18:16:03 eval done logs/em_all/stacking/vision_s2 p2 ta8 rc=0 ok=True
+10-04 19:02:36 eval done logs/em_all/stacking/vision_s2 p2 ta2 rc=0 ok=True
+10-04 19:06:36 eval done logs/em_all/stacking/vision_s2 p1 ta2 rc=0 ok=True
+10-04 19:07:06 ALLDONE failed=[]

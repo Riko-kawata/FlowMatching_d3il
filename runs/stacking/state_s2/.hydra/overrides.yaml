@@ -1,0 +1,6 @@
+- agents=em_agent
+- agent_name=em
+- seed=2
+- wandb.entity=none
+- wandb.project=d3il
+- +skip_sim=true

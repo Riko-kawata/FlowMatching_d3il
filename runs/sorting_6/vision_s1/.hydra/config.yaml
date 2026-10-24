@@ -1,0 +1,139 @@
+agents:
+  _target_: agents.em_vision_agent.EMVisionAgent
+  _recursive_: false
+  model:
+    _target_: agents.models.em.em_policy.EMVisionPolicy
+    _recursive_: false
+    action_dim: ${action_dim}
+    obs_history: ${agents.obs_history}
+    horizon: ${agents.horizon}
+    frame_dim: 128
+    cond_dim: 256
+    obs_hidden: 512
+    energy_hidden: 256
+    energy_blocks: 3
+    energy_kernel: 3
+    obs_encoder:
+      _target_: agents.models.vision.multi_image_obs_encoder.MultiImageObsEncoder
+      shape_meta:
+        obs:
+          agentview_image:
+            shape:
+            - 3
+            - 96
+            - 96
+            type: rgb
+          in_hand_image:
+            shape:
+            - 3
+            - 96
+            - 96
+            type: rgb
+      rgb_model:
+        _target_: agents.models.vision.model_getter.get_resnet
+        input_shape:
+        - 3
+        - 96
+        - 96
+        output_size: 64
+      resize_shape: null
+      random_crop: false
+      use_group_norm: true
+      share_rgb_model: false
+      imagenet_norm: true
+  trainset: ${trainset}
+  valset: ${valset}
+  train_batch_size: 128
+  val_batch_size: ${val_batch_size}
+  num_workers: ${num_workers}
+  epoch: ${epoch}
+  device: ${device}
+  scale_data: ${scale_data}
+  eval_every_n_epochs: ${eval_every_n_epochs}
+  obs_history: 2
+  horizon: 16
+  exec_horizon: 8
+  yaw_cols: []
+  lr: 0.00015
+  betas:
+  - 0.9
+  - 0.95
+  weight_decay: 0.0001
+  warmup_steps: 2000
+  min_lr: 1.0e-06
+  grad_clip: 1.0
+  flow_steps: 60000
+  ema_decay: 0.999
+  t_dist: uniform
+  num_steps: 20
+  tau_star: 0.8
+  sample_eps_max: 0.0
+  n_action_samples: 1
+  val_every: 5000
+  save_every: 20000
+  log_every: 1000
+agent_name: em_vision
+log_dir: logs/sorting/
+train_data_path: environments/dataset/data/sorting/6_boxes_train_files.pkl
+eval_data_path: environments/dataset/data/sorting/6_boxes_eval_files.pkl
+num_boxes: 6
+wandb:
+  entity: none
+  project: d3il
+group: sorting_${agent_name}
+seed: 1
+hidden_dim: 128
+num_hidden_layers: 4
+n_layer: 4
+n_head: 4
+n_embd: 72
+train_batch_size: 512
+val_batch_size: 512
+num_workers: 2
+device: cuda
+epoch: 100
+eval_every_n_epochs: 20
+scale_data: true
+obs_dim: 2
+action_dim: 2
+max_len_data: 1200
+window_size: 5
+trainset:
+  _target_: environments.dataset.sorting_dataset.Sorting_Img_Dataset
+  data_directory: ${train_data_path}
+  obs_dim: ${obs_dim}
+  action_dim: ${action_dim}
+  max_len_data: ${max_len_data}
+  window_size: ${window_size}
+  num_boxes: ${num_boxes}
+valset:
+  _target_: environments.dataset.sorting_dataset.Sorting_Img_Dataset
+  data_directory: ${eval_data_path}
+  obs_dim: ${obs_dim}
+  action_dim: ${action_dim}
+  max_len_data: ${max_len_data}
+  window_size: ${window_size}
+  num_boxes: ${num_boxes}
+train_simulation:
+  _target_: simulation.sorting_sim.Sorting_Sim
+  seed: ${seed}
+  device: ${device}
+  render: false
+  n_cores: 5
+  n_contexts: 30
+  n_trajectories_per_context: 1
+  max_steps_per_episode: 1200
+  if_vision: true
+  num_box: ${num_boxes}
+simulation:
+  _target_: simulation.sorting_sim.Sorting_Sim
+  seed: ${seed}
+  device: ${device}
+  render: true
+  n_cores: 1
+  n_contexts: 3
+  n_trajectories_per_context: 3
+  max_steps_per_episode: 1200
+  if_vision: true
+  num_box: ${num_boxes}
+skip_sim: true

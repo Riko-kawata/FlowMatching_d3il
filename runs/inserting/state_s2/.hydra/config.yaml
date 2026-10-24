@@ -1,0 +1,99 @@
+agents:
+  _target_: agents.em_agent.EMAgent
+  _recursive_: false
+  model:
+    _target_: agents.models.em.em_policy.EMStatePolicy
+    obs_dim: ${obs_dim}
+    action_dim: ${action_dim}
+    obs_history: ${agents.obs_history}
+    horizon: ${agents.horizon}
+    yaw_cols: ${agents.yaw_cols}
+    drop_cols: ${agents.drop_cols}
+    aligning_rel: ${agents.aligning_rel}
+    cond_dim: 256
+    obs_hidden: 512
+    energy_hidden: 256
+    energy_blocks: 3
+    energy_kernel: 3
+  trainset: ${trainset}
+  valset: ${valset}
+  train_batch_size: 512
+  val_batch_size: ${val_batch_size}
+  num_workers: ${num_workers}
+  epoch: ${epoch}
+  device: ${device}
+  scale_data: ${scale_data}
+  eval_every_n_epochs: ${eval_every_n_epochs}
+  obs_history: 2
+  horizon: 16
+  exec_horizon: 8
+  yaw_cols: []
+  drop_cols: []
+  aligning_rel: false
+  lr: 0.0003
+  betas:
+  - 0.9
+  - 0.95
+  weight_decay: 0.0001
+  warmup_steps: 2000
+  min_lr: 1.0e-06
+  grad_clip: 1.0
+  flow_steps: 100000
+  ema_decay: 0.999
+  t_dist: uniform
+  num_steps: 20
+  tau_star: 0.8
+  sample_eps_max: 0.0
+  n_action_samples: 1
+  val_every: 5000
+  save_every: 20000
+  log_every: 1000
+agent_name: em
+log_dir: logs/inserting/
+train_data_path: environments/dataset/data/inserting/train_files.pkl
+eval_data_path: environments/dataset/data/inserting/eval_files.pkl
+wandb:
+  entity: none
+  project: d3il
+group: inserting_${agent_name}
+seed: 2
+hidden_dim: 256
+num_hidden_layers: 6
+n_layer: 4
+n_head: 4
+n_embd: 72
+train_batch_size: 256
+val_batch_size: 256
+num_workers: 4
+device: cuda
+epoch: 50
+eval_every_n_epochs: 5
+scale_data: true
+obs_dim: 13
+action_dim: 2
+max_len_data: 2400
+window_size: 1
+trainset:
+  _target_: environments.dataset.inserting_dataset.Inserting_Dataset
+  data_directory: ${train_data_path}
+  obs_dim: ${obs_dim}
+  action_dim: ${action_dim}
+  max_len_data: ${max_len_data}
+  window_size: ${window_size}
+valset:
+  _target_: environments.dataset.inserting_dataset.Inserting_Dataset
+  data_directory: ${eval_data_path}
+  obs_dim: ${obs_dim}
+  action_dim: ${action_dim}
+  max_len_data: ${max_len_data}
+  window_size: ${window_size}
+simulation:
+  _target_: simulation.inserting_sim.Inserting_Sim
+  seed: ${seed}
+  device: ${device}
+  render: false
+  n_cores: 30
+  n_contexts: 60
+  n_trajectories_per_context: 6
+  max_steps_per_episode: 2000
+skip_sim: true

@@ -1,0 +1,56 @@
+{
+  "task": "sorting_6",
+  "mod": "vision",
+  "seed": 0,
+  "run_dir": "/mnt/data1/home/rkawata/work/EnergyMatching/experiments/d3il/logs/em_all/sorting_6/vision_s0",
+  "ckpt": "em_p1_step60000.pth",
+  "exec_horizon": 2,
+  "fps": 30.0,
+  "overrides": [
+    "agents.exec_horizon=2",
+    "simulation.render=False",
+    "simulation.n_cores=1",
+    "simulation.n_contexts=5",
+    "simulation.n_trajectories_per_context=1",
+    "simulation.max_steps_per_episode=1200",
+    "simulation.if_vision=True"
+  ],
+  "episodes": [
+    {
+      "ctx": 0,
+      "k": 0,
+      "steps": 440,
+      "success": true,
+      "video": "ctx00_k0_success.mp4"
+    },
+    {
+      "ctx": 1,
+      "k": 0,
+      "steps": 1200,
+      "success": false,
+      "video": "ctx01_k0_fail.mp4"
+    },
+    {
+      "ctx": 2,
+      "k": 0,
+      "steps": 486,
+      "success": true,
+      "video": "ctx02_k0_success.mp4"
+    },
+    {
+      "ctx": 3,
+      "k": 0,
+      "steps": 1200,
+      "success": false,
+      "video": "ctx03_k0_fail.mp4"
+    },
+    {
+      "ctx": 4,
+      "k": 0,
+      "steps": 403,
+      "success": true,
+      "video": "ctx04_k0_success.mp4"
+    }
+  ],
+  "success_rate": 0.6
+}

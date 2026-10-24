@@ -1,0 +1,147 @@
+[2026-10-01 20:47:45,549][root][INFO] - Loading Inserting Dataset
+[2026-10-01 20:47:46,672][root][INFO] - Loading Inserting Dataset
+[2026-10-01 20:47:47,447][agents.utils.scaler][INFO] - Datset Info: state min: [ -6.04334738  -3.15647403  -4.69504804  -3.19082863  -1.60565088
+  -1.79263943 -14.26398609  -2.49855273  -1.61351944 -54.36436096
+  -1.74752557  -2.16966952  -1.38348522] and max: [3.57358923e+00 2.78723661e+00 3.56566049e+00 2.94005461e+00
+ 4.77039953e+00 1.22617165e+00 4.80630612e+01 3.26426059e+00
+ 9.91525495e-01 4.75973394e-01 1.17034220e+00 1.72192338e+00
+ 5.27607865e+02], action min: [-1.75095113 -1.68880479] and max: [1.74743456 1.46714861]
+[2026-10-01 20:47:47,448][agents.utils.scaler][INFO] - Training dataset size: input (692360, 13) target (692360, 2)
+[2026-10-01 20:47:47,453][agents.base_agent][INFO] - The model has a total amount of 1729281 parameters
+[2026-10-01 20:47:47,780][agents.em_agent][INFO] - [em] feat_dim=13 yaw_cols=[] drop_cols=[] aligning_rel=False max|z|=[  6.    3.2   4.7   3.2   4.8   1.8  48.1   3.3   1.6  54.4   1.8   2.2
+ 527.6]
+[2026-10-01 20:47:47,951][agents.em_agent][INFO] - [em] train pairs 692360 / val pairs 100027
+[2026-10-01 20:47:49,867][agents.em_agent][INFO] - [p1] step 0 flow 2.0173
+[2026-10-01 20:48:15,107][agents.em_agent][INFO] - [p1] step 1000 flow 0.8227
+[2026-10-01 20:48:40,236][agents.em_agent][INFO] - [p1] step 2000 flow 0.7290
+[2026-10-01 20:49:05,572][agents.em_agent][INFO] - [p1] step 3000 flow 0.6363
+[2026-10-01 20:49:31,061][agents.em_agent][INFO] - [p1] step 4000 flow 0.6259
+[2026-10-01 20:49:57,011][agents.em_agent][INFO] - [p1] step 4999 flow 0.6344 val_flow_ema 0.6034 val_flow_raw 0.6054
+[2026-10-01 20:49:57,037][agents.em_agent][INFO] - [p1] step 5000 flow 0.6264
+[2026-10-01 20:50:21,854][agents.em_agent][INFO] - [p1] step 6000 flow 0.5843
+[2026-10-01 20:50:46,824][agents.em_agent][INFO] - [p1] step 7000 flow 0.5968
+[2026-10-01 20:51:12,341][agents.em_agent][INFO] - [p1] step 8000 flow 0.5648
+[2026-10-01 20:51:37,803][agents.em_agent][INFO] - [p1] step 9000 flow 0.5590
+[2026-10-01 20:52:03,096][agents.em_agent][INFO] - [p1] step 9999 flow 0.5153 val_flow_ema 0.5395 val_flow_raw 0.5582
+[2026-10-01 20:52:03,121][agents.em_agent][INFO] - [p1] step 10000 flow 0.5379
+[2026-10-01 20:52:28,712][agents.em_agent][INFO] - [p1] step 11000 flow 0.5881
+[2026-10-01 20:52:53,659][agents.em_agent][INFO] - [p1] step 12000 flow 0.5638
+[2026-10-01 20:53:18,731][agents.em_agent][INFO] - [p1] step 13000 flow 0.5160
+[2026-10-01 20:53:43,420][agents.em_agent][INFO] - [p1] step 14000 flow 0.5277
+[2026-10-01 20:54:08,445][agents.em_agent][INFO] - [p1] step 14999 flow 0.5395 val_flow_ema 0.5185 val_flow_raw 0.5387
+[2026-10-01 20:54:08,467][agents.em_agent][INFO] - [p1] step 15000 flow 0.5413
+[2026-10-01 20:54:33,645][agents.em_agent][INFO] - [p1] step 16000 flow 0.5160
+[2026-10-01 20:54:58,434][agents.em_agent][INFO] - [p1] step 17000 flow 0.5200
+[2026-10-01 20:55:23,382][agents.em_agent][INFO] - [p1] step 18000 flow 0.5116
+[2026-10-01 20:55:48,438][agents.em_agent][INFO] - [p1] step 19000 flow 0.5125
+[2026-10-01 20:56:13,368][agents.em_agent][INFO] - [p1] step 19999 flow 0.5446 val_flow_ema 0.5064 val_flow_raw 0.5259
+[2026-10-01 20:56:13,411][agents.em_agent][INFO] - [p1] step 20000 flow 0.5371
+[2026-10-01 20:56:38,238][agents.em_agent][INFO] - [p1] step 21000 flow 0.5420
+[2026-10-01 20:57:03,143][agents.em_agent][INFO] - [p1] step 22000 flow 0.5359
+[2026-10-01 20:57:28,429][agents.em_agent][INFO] - [p1] step 23000 flow 0.5151
+[2026-10-01 20:57:53,399][agents.em_agent][INFO] - [p1] step 24000 flow 0.4533
+[2026-10-01 20:58:18,312][agents.em_agent][INFO] - [p1] step 24999 flow 0.4779 val_flow_ema 0.4980 val_flow_raw 0.5159
+[2026-10-01 20:58:18,347][agents.em_agent][INFO] - [p1] step 25000 flow 0.4951
+[2026-10-01 20:58:43,667][agents.em_agent][INFO] - [p1] step 26000 flow 0.5277
+[2026-10-01 20:59:08,621][agents.em_agent][INFO] - [p1] step 27000 flow 0.4930
+[2026-10-01 20:59:33,385][agents.em_agent][INFO] - [p1] step 28000 flow 0.5325
+[2026-10-01 20:59:58,261][agents.em_agent][INFO] - [p1] step 29000 flow 0.4881
+[2026-10-01 21:00:23,053][agents.em_agent][INFO] - [p1] step 29999 flow 0.4930 val_flow_ema 0.4928 val_flow_raw 0.5082
+[2026-10-01 21:00:23,078][agents.em_agent][INFO] - [p1] step 30000 flow 0.4986
+[2026-10-01 21:00:47,801][agents.em_agent][INFO] - [p1] step 31000 flow 0.5345
+[2026-10-01 21:01:12,914][agents.em_agent][INFO] - [p1] step 32000 flow 0.5012
+[2026-10-01 21:01:37,661][agents.em_agent][INFO] - [p1] step 33000 flow 0.4965
+[2026-10-01 21:02:02,522][agents.em_agent][INFO] - [p1] step 34000 flow 0.4891
+[2026-10-01 21:02:27,560][agents.em_agent][INFO] - [p1] step 34999 flow 0.4669 val_flow_ema 0.4893 val_flow_raw 0.5060
+[2026-10-01 21:02:27,582][agents.em_agent][INFO] - [p1] step 35000 flow 0.5094
+[2026-10-01 21:02:52,379][agents.em_agent][INFO] - [p1] step 36000 flow 0.4963
+[2026-10-01 21:03:16,833][agents.em_agent][INFO] - [p1] step 37000 flow 0.4721
+[2026-10-01 21:03:41,642][agents.em_agent][INFO] - [p1] step 38000 flow 0.5306
+[2026-10-01 21:04:07,064][agents.em_agent][INFO] - [p1] step 39000 flow 0.4644
+[2026-10-01 21:04:32,035][agents.em_agent][INFO] - [p1] step 39999 flow 0.5253 val_flow_ema 0.4865 val_flow_raw 0.4994
+[2026-10-01 21:04:32,099][agents.em_agent][INFO] - [p1] step 40000 flow 0.5004
+[2026-10-01 21:04:56,820][agents.em_agent][INFO] - [p1] step 41000 flow 0.4963
+[2026-10-01 21:05:21,747][agents.em_agent][INFO] - [p1] step 42000 flow 0.5021
+[2026-10-01 21:05:46,408][agents.em_agent][INFO] - [p1] step 43000 flow 0.4723
+[2026-10-01 21:06:10,505][agents.em_agent][INFO] - [p1] step 44000 flow 0.4627
+[2026-10-01 21:06:35,411][agents.em_agent][INFO] - [p1] step 44999 flow 0.4828 val_flow_ema 0.4838 val_flow_raw 0.4944
+[2026-10-01 21:06:35,435][agents.em_agent][INFO] - [p1] step 45000 flow 0.5115
+[2026-10-01 21:07:00,410][agents.em_agent][INFO] - [p1] step 46000 flow 0.4642
+[2026-10-01 21:07:25,410][agents.em_agent][INFO] - [p1] step 47000 flow 0.4771
+[2026-10-01 21:07:50,549][agents.em_agent][INFO] - [p1] step 48000 flow 0.4759
+[2026-10-01 21:08:15,402][agents.em_agent][INFO] - [p1] step 49000 flow 0.4955
+[2026-10-01 21:08:40,423][agents.em_agent][INFO] - [p1] step 49999 flow 0.4891 val_flow_ema 0.4823 val_flow_raw 0.4943
+[2026-10-01 21:08:40,446][agents.em_agent][INFO] - [p1] step 50000 flow 0.4423
+[2026-10-01 21:09:05,290][agents.em_agent][INFO] - [p1] step 51000 flow 0.4479
+[2026-10-01 21:09:30,476][agents.em_agent][INFO] - [p1] step 52000 flow 0.4700
+[2026-10-01 21:09:54,495][agents.em_agent][INFO] - [p1] step 53000 flow 0.4750
+[2026-10-01 21:10:19,224][agents.em_agent][INFO] - [p1] step 54000 flow 0.4782
+[2026-10-01 21:10:43,783][agents.em_agent][INFO] - [p1] step 54999 flow 0.4948 val_flow_ema 0.4808 val_flow_raw 0.4900
+[2026-10-01 21:10:43,805][agents.em_agent][INFO] - [p1] step 55000 flow 0.4841
+[2026-10-01 21:11:08,582][agents.em_agent][INFO] - [p1] step 56000 flow 0.4608
+[2026-10-01 21:11:33,584][agents.em_agent][INFO] - [p1] step 57000 flow 0.4748
+[2026-10-01 21:11:58,640][agents.em_agent][INFO] - [p1] step 58000 flow 0.4847
+[2026-10-01 21:12:23,530][agents.em_agent][INFO] - [p1] step 59000 flow 0.4760
+[2026-10-01 21:12:48,967][agents.em_agent][INFO] - [p1] step 59999 flow 0.4525 val_flow_ema 0.4798 val_flow_raw 0.4890
+[2026-10-01 21:12:49,012][agents.em_agent][INFO] - [p1] step 60000 flow 0.4655
+[2026-10-01 21:13:13,834][agents.em_agent][INFO] - [p1] step 61000 flow 0.4791
+[2026-10-01 21:13:38,613][agents.em_agent][INFO] - [p1] step 62000 flow 0.4709
+[2026-10-01 21:14:03,470][agents.em_agent][INFO] - [p1] step 63000 flow 0.4709
+[2026-10-01 21:14:28,197][agents.em_agent][INFO] - [p1] step 64000 flow 0.4799
+[2026-10-01 21:14:53,039][agents.em_agent][INFO] - [p1] step 64999 flow 0.4628 val_flow_ema 0.4791 val_flow_raw 0.4865
+[2026-10-01 21:14:53,065][agents.em_agent][INFO] - [p1] step 65000 flow 0.4435
+[2026-10-01 21:15:17,960][agents.em_agent][INFO] - [p1] step 66000 flow 0.4479
+[2026-10-01 21:15:42,723][agents.em_agent][INFO] - [p1] step 67000 flow 0.4526
+[2026-10-01 21:16:07,465][agents.em_agent][INFO] - [p1] step 68000 flow 0.4761
+[2026-10-01 21:16:32,406][agents.em_agent][INFO] - [p1] step 69000 flow 0.4907
+[2026-10-01 21:16:57,372][agents.em_agent][INFO] - [p1] step 69999 flow 0.4549 val_flow_ema 0.4785 val_flow_raw 0.4825
+[2026-10-01 21:16:57,410][agents.em_agent][INFO] - [p1] step 70000 flow 0.4561
+[2026-10-01 21:17:21,905][agents.em_agent][INFO] - [p1] step 71000 flow 0.4368
+[2026-10-01 21:17:46,866][agents.em_agent][INFO] - [p1] step 72000 flow 0.4776
+[2026-10-01 21:18:11,604][agents.em_agent][INFO] - [p1] step 73000 flow 0.4521
+[2026-10-01 21:18:35,937][agents.em_agent][INFO] - [p1] step 74000 flow 0.4844
+[2026-10-01 21:19:01,069][agents.em_agent][INFO] - [p1] step 74999 flow 0.4378 val_flow_ema 0.4787 val_flow_raw 0.4817
+[2026-10-01 21:19:01,091][agents.em_agent][INFO] - [p1] step 75000 flow 0.4782
+[2026-10-01 21:19:26,003][agents.em_agent][INFO] - [p1] step 76000 flow 0.4617
+[2026-10-01 21:19:51,524][agents.em_agent][INFO] - [p1] step 77000 flow 0.4622
+[2026-10-01 21:20:16,833][agents.em_agent][INFO] - [p1] step 78000 flow 0.4435
+[2026-10-01 21:20:41,972][agents.em_agent][INFO] - [p1] step 79000 flow 0.4553
+[2026-10-01 21:21:07,214][agents.em_agent][INFO] - [p1] step 79999 flow 0.4321 val_flow_ema 0.4785 val_flow_raw 0.4810
+[2026-10-01 21:21:07,257][agents.em_agent][INFO] - [p1] step 80000 flow 0.4622
+[2026-10-01 21:21:32,568][agents.em_agent][INFO] - [p1] step 81000 flow 0.4603
+[2026-10-01 21:21:58,106][agents.em_agent][INFO] - [p1] step 82000 flow 0.4339
+[2026-10-01 21:22:23,134][agents.em_agent][INFO] - [p1] step 83000 flow 0.4709
+[2026-10-01 21:22:48,247][agents.em_agent][INFO] - [p1] step 84000 flow 0.4450
+[2026-10-01 21:23:13,571][agents.em_agent][INFO] - [p1] step 84999 flow 0.4822 val_flow_ema 0.4785 val_flow_raw 0.4798
+[2026-10-01 21:23:13,595][agents.em_agent][INFO] - [p1] step 85000 flow 0.4649
+[2026-10-01 21:23:39,356][agents.em_agent][INFO] - [p1] step 86000 flow 0.4341
+[2026-10-01 21:24:04,575][agents.em_agent][INFO] - [p1] step 87000 flow 0.4481
+[2026-10-01 21:24:30,044][agents.em_agent][INFO] - [p1] step 88000 flow 0.4547
+[2026-10-01 21:24:55,989][agents.em_agent][INFO] - [p1] step 89000 flow 0.4623
+[2026-10-01 21:25:19,748][agents.em_agent][INFO] - [p1] step 89999 flow 0.4250 val_flow_ema 0.4785 val_flow_raw 0.4794
+[2026-10-01 21:25:19,778][agents.em_agent][INFO] - [p1] step 90000 flow 0.4642
+[2026-10-01 21:25:43,441][agents.em_agent][INFO] - [p1] step 91000 flow 0.4679
+[2026-10-01 21:26:06,318][agents.em_agent][INFO] - [p1] step 92000 flow 0.4564
+[2026-10-01 21:26:30,754][agents.em_agent][INFO] - [p1] step 93000 flow 0.4778
+[2026-10-01 21:26:52,745][agents.em_agent][INFO] - [p1] step 94000 flow 0.4374
+[2026-10-01 21:27:15,937][agents.em_agent][INFO] - [p1] step 94999 flow 0.4464 val_flow_ema 0.4784 val_flow_raw 0.4789
+[2026-10-01 21:27:15,957][agents.em_agent][INFO] - [p1] step 95000 flow 0.4450
+[2026-10-01 21:27:40,271][agents.em_agent][INFO] - [p1] step 96000 flow 0.4608
+[2026-10-01 21:28:03,854][agents.em_agent][INFO] - [p1] step 97000 flow 0.4254
+[2026-10-01 21:28:26,143][agents.em_agent][INFO] - [p1] step 98000 flow 0.4573
+[2026-10-01 21:28:48,144][agents.em_agent][INFO] - [p1] step 99000 flow 0.4468
+[2026-10-01 21:29:09,974][agents.em_agent][INFO] - [p1] step 99999 flow 0.4486 val_flow_ema 0.4786 val_flow_raw 0.4786
+[2026-10-01 21:29:10,249][agents.em_agent][INFO] - [p2] step 0 flow 0.4531 cd -0.0113 E_pos -37.5042 E_neg -23.7568
+[2026-10-01 21:33:07,987][agents.em_agent][INFO] - [p2] step 1000 flow 0.4634 cd -0.0113 E_pos -37.1963 E_neg -23.4860
+[2026-10-01 21:37:06,743][agents.em_agent][INFO] - [p2] step 2000 flow 0.4680 cd -0.0122 E_pos -38.6244 E_neg -23.9649
+[2026-10-01 21:41:17,025][agents.em_agent][INFO] - [p2] step 3000 flow 0.4976 cd -0.0116 E_pos -36.7704 E_neg -22.8676
+[2026-10-01 21:45:24,001][agents.em_agent][INFO] - [p2] step 4000 flow 0.4665 cd -0.0119 E_pos -36.8034 E_neg -22.5804
+[2026-10-01 21:50:10,228][agents.em_agent][INFO] - [p2] step 4999 flow 0.4943 cd -0.0106 E_pos -36.8944 E_neg -23.9341 val_flow_ema 0.4781 val_flow_raw 0.4925
+[2026-10-01 21:50:11,006][agents.em_agent][INFO] - [p2] step 5000 flow 0.4878 cd -0.0113 E_pos -37.1126 E_neg -23.4482
+[2026-10-01 22:27:15,855][agents.em_agent][INFO] - [p2] step 6000 flow 0.4925 cd -0.0110 E_pos -36.5725 E_neg -23.1235
+[2026-10-01 22:50:10,377][agents.em_agent][INFO] - [p2] step 7000 flow 0.4522 cd -0.0117 E_pos -37.1051 E_neg -23.0024
+[2026-10-01 22:54:48,470][agents.em_agent][INFO] - [p2] step 8000 flow 0.4723 cd -0.0117 E_pos -36.6649 E_neg -22.5885
+[2026-10-01 22:58:54,456][agents.em_agent][INFO] - [p2] step 9000 flow 0.4289 cd -0.0119 E_pos -36.9740 E_neg -22.7137
+[2026-10-01 23:14:40,368][agents.em_agent][INFO] - [p2] step 9999 flow 0.4374 cd -0.0117 E_pos -36.2803 E_neg -22.1670 val_flow_ema 0.4785 val_flow_raw 0.4788
+[2026-10-01 23:14:40,420][agents.em_agent][INFO] - Training done!
+[2026-10-01 23:14:40,421][__main__][INFO] - skip_sim: training only
