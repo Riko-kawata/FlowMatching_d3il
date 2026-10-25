@@ -1,13 +1,11 @@
 # D3IL × Flow Matching — Flow 学習の結果まとめ
 
 `experiments/d3il` で学習した方策のうち、**Flow 学習 (flow matching で v = -∇V を回帰) の重み**について、
-推論動画と、学習・推論に使ったファイルをまとめたもの。d3il 側のファイルは変更していない (すべてコピー)。
+推論動画と、学習・推論に使ったファイルをまとめたもの。
 
 - 学習: 2026-10-01 〜 10-04、`d3il/logs/em_all/` (状態入力 100k step、画像入力 60k step)
 - 成功率: [code/logs/em_all/summary_flow.md](code/logs/em_all/summary_flow.md)
 
-`code/` と `runs/` は Flow 学習だけを扱う形に整理してある (d3il での Phase1 = ここでの Flow。
-d3il にあった Phase2 (CD 損失による追加学習) のコード・設定・比較スクリプトは削除)。下の「d3il との対応」を参照。
 
 ## フォルダ構成
 
@@ -121,29 +119,4 @@ python run.py --config-name=sorting_4_config agents=em_agent agent_name=em seed=
 python analysis/eval_vision_ckpt.py <run_dir> em_flow_step100000.pth 30 agents.exec_horizon=2
 ```
 
-## d3il との対応
 
-| d3il (元) | dl_kouza |
-|---|---|
-| Phase1 (`phase1_steps`, `ema_decay_p1`, ログの `[p1]`) | Flow (`flow_steps`, `ema_decay`, ログの `[flow]`) |
-| `em_p1_step{N}.pth` | `em_flow_step{N}.pth` (`runs/` の 21 本は元とバイト単位で同一) |
-| `pair_p1_ta{8,2}.{log,npz}` | `flow_ta{8,2}.{log,npz}` |
-| `orchestrate_p1p2.py` / `summarize_p1p2.py` / `summary_p1p2.md` | `orchestrate_flow.py` / `summarize_flow.py` / `summary_flow.md` |
-| Phase2: `phase2_steps`, `ema_decay_p2`, `lambda_cd`, `n_gibbs`, `cd_*`, `phase2_lr`, `phase2_warmup`, `init_ckpt`, `init_ema_ckpt`, `_cd_loss` | 削除 |
-
-- `runs/*/.hydra/config.yaml` は上の対応どおり書き換えてある (Phase2 の項目を削除し、名前を Flow に)。
-  これらの重みは Phase2 を始める前に保存されたものなので、書き換えた設定が重みの作られ方そのものになる。
-  `code/` のエージェントはこの設定で読み込める。元の設定は d3il 側に残っている。
-- **書き換えていないもの** (プログラムではないため): `runs/*/run.log` と `code/logs/em_all/orchestrate*.log`
-  (元の学習・投入ログ。`[p1]` / `[p2]` 行と旧ファイル名を含む)、`code/*.md` (元の結果文書。Phase2 の考察を含む)、動画内の文字。
-
-## 注意
-
-- **画像入力の学習コードは現在の d3il の dataset と一致しない。** 画像 run の学習後 (2026-10-08) に
-  `environments/dataset/*_dataset.py` が画像を遅延読み込みする版 (`lazy_image_store.py`) に置き換わり、
-  `agents/em_vision_agent.py` の `_compact` が参照する `bp_cam_imgs` が無くなった。学習時の旧 dataset は残っていない。
-  - 推論には影響しない: `_compact` は学習用の画像の詰め直しで、推論に要る行動の正規化統計は `EMAgent.__init__` が
-    行動列から計算する。動画スクリプトでは `_compact` を飛ばしており、現在の dataset から得た行動サンプル数は
-    元の学習ログと一致した (Sorting4 316813 / Sorting6 765350 / Stacking 616163)。
-  - 画像入力をこのコードで再学習するには `em_vision_agent.py` を新しい dataset に合わせる必要がある。
-- `runs/` の重みは EMA 重みの最終 step のみ (`*_raw.pth` と途中 step は d3il 側にある)。
